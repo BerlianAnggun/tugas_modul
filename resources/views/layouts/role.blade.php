@@ -1,3 +1,9 @@
+use app\Controllers\BookConstroller;
+
+Route::middeleware('auth')->group(funtion(){
+    Route::get('/books', [BookController::class, 'index']->name('book'));
+});
+
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-grey-800 dark:text-gray-200 leading-tight">
