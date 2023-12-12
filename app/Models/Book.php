@@ -6,23 +6,25 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-
 class Book extends Model
 {
     use HasFactory;
-
-    public function Bookshelf(): BelongsTo
+    
+    public function bookshelf(): BelongsTo
     {
-        return $this->belongTo(Bookshelf::class);
+        return $this->belongsTo(Bookshelf::class);
     }
-    protected $fillable =[
+
+    protected $fillable = [
         'title',
         'author',
         'year',
         'publisher',
         'city',
-        'quality',
+        'quantity',
         'bookshelf_id',
         'cover',
     ];
+
+
 }

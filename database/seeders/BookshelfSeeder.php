@@ -2,9 +2,9 @@
 
 namespace Database\Seeders;
 
-use App\Models\Bookshelf;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Bookshelf;
 
 class BookshelfSeeder extends Seeder
 {
@@ -19,15 +19,25 @@ class BookshelfSeeder extends Seeder
                 'code' => '620',
                 'name' => 'Engineering',
                 'created_at' => now(),
-                'uppdate_at' => now()
+                'updated_at' => now()
             ],
             [
                 'id' => '2',
                 'code' => '621',
-                'name' => 'Mechanial',
+                'name' => 'Mechanical',
                 'created_at' => now(),
-                'update_at' => now()
+                'updated_at' => now()
             ],
-        ]);
+            [
+                'id' => '3',
+                'code' => '622',
+                'name' => 'Topoographical',
+                'created_at' => now(),
+                'updated_at' => now()
+            ],
+        ]
+
+    );
+
     }
 }
